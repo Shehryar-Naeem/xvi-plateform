@@ -67,7 +67,7 @@ export function Header({
   const isSticky = (e) => {
     const header = document.querySelector('.header-section');
     const scrollTop = window.scrollY;
-    scrollTop >= 250 ? header?.classList.add('is-sticky') : header?.classList.remove('is-sticky');
+    scrollTop >= 250 ? header.classList.add('is-sticky') : header.classList.remove('is-sticky');
     if ( scrollTop >= 250 && showStickyNode == 0 ) {
       setShowStickyNode(1);
     }
